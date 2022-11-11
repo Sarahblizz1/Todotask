@@ -1,0 +1,23 @@
+GET http://localhost:3000/task HTTP/1.1
+
+###
+POST http://localhost:3000/task HTTP/1.1
+Content-Type: application/json
+
+{
+    "_id": 1,
+    "title": "frontend task",
+    "description": "work on my frontend task on monday"
+}
+
+###
+PUT http://localhost:3000/task/1 HTTP/1.1
+Content-Type: application/json
+
+{
+    "_id": 2,
+    "title": "backend task",
+    "description": "work on my backend task on wednesday"
+}
+
+DELETE http://localhost:3000/task/1 HTTP/1.1
